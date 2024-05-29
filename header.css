@@ -1,0 +1,42 @@
+header {
+  background-color: #000;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background-color: #000;
+  height: 80px;
+}
+
+.logo {
+  background-image: url(https://import.cdn.thinkific.com/523761/courses/1473531/logo-210901-223656.png);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  width: 135px;
+  height: 45px;
+}
+
+.header_nav {
+  display: block;
+  font-weight: 700;
+
+  & a {
+    color: #d9dadc;
+    padding: 28px 17px;
+  }
+
+  & a:hover {
+    color: #1ed760;
+    transition: ease-in-out 0.2s;
+  }
+}
+
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+}

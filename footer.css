@@ -1,0 +1,137 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  padding: 80px 200px 50px 200px;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .footer_nav {
+    flex-direction: column;
+  }
+}
+
+.footer_head {
+  color: #919496;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.footer_nav_menu {
+  display: flex;
+}
+
+.footer_logo {
+  background-image: url(https://import.cdn.thinkific.com/523761/courses/1473531/logo-210901-223656.png);
+  background-repeat: no-repeat;
+  background-size: 130px;
+  width: 190px;
+  height: 45px;
+}
+
+.footer_nav_menu-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 18px;
+}
+
+.footer_links {
+  & li {
+    padding-top: 3px;
+    padding-bottom: 15px;
+  }
+
+  & a {
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  & a:hover {
+    color: #1ed760;
+    transition: ease-in-out 0.1s;
+  }
+}
+
+.footer_socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+
+  & li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+    background-color: #222322;
+  }
+
+  & a {
+    color: white;
+    font-size: 24px;
+  }
+
+  & a:hover {
+    color: #1ed760;
+    transition: ease-in-out 0.1s;
+  }
+}
+
+#language {
+  display: flex;
+  align-self: flex-end;
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: white;
+  }
+}
+
+#language,
+.footer_detail_menu-container {
+  flex: 1; /* 남은 공간을 모두 차지 */
+}
+
+.footer_detail_menu-container {
+  /* align-self: flex-start; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & span {
+    color: #919496;
+    font-size: 12px;
+  }
+}
+
+.footer_detail_menu-wrapper {
+  display: flex;
+
+  gap: 24px;
+  padding: 12px 0;
+
+  & a {
+    color: #919496;
+    font-size: 12px;
+  }
+
+  & a:hover {
+    color: #1ed760;
+    transition: ease-in-out 0.1s;
+  }
+}
